@@ -1,0 +1,31 @@
+<body>
+<script>
+  
+  const names = [
+    'Gumbar',
+    'Nimbus',
+    'Robin',
+    'Vixen'
+  ]
+  
+  function writeName (name) {
+    document.body.style.marginTop = '50px'
+    document.body.style.textAlign = 'center'
+    document.body.style.fontSize = '30px'
+    document.body.style.fontFamily = 'copperplate'
+    document.body.textContent = name
+  }
+  
+  function randomNumber () {
+    let r = Math.random()
+    r = r * names.length
+    r = Math.floor(r)
+    return r
+  }
+  
+  const ran = randomNumber()
+  const ranChar = names[ran]
+  writeName(ranChar)
+  
+  </script>
+</body>
